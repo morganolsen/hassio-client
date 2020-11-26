@@ -1,6 +1,6 @@
 {
-  "name": "hassio-client",
-  "displayName": "hassio-client",
+  "name": "Home Assistant Controller",
+  "displayName": "Home Assistant Controller",
   "expo": {
     "name": "hassio-client",
     "slug": "hassio-client",
