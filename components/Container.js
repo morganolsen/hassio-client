@@ -25,7 +25,7 @@ function getStatusBarHeight(){
 const Container = styled.View`
     flex: 1;
     background-color: #222;
-    justify-content: center;
+    
     align-items: center;
     padding-top: ${getStatusBarHeight()+20}px;
 `;

@@ -4,8 +4,17 @@ import {ScrollView} from 'react-native';
 import Container from './Container';
 import {getScenes} from '../Data';
 import SceneBox from './SceneBox';
+import Navbar from './Navbar';
+import styled from 'styled-components';
 
-
+const TextContent = styled.Text`
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+`;
 
 const Scenes = () => {
 
@@ -27,6 +36,8 @@ const Scenes = () => {
 
     return (
         <Container>
+            <Navbar />
+            <TextContent>Scenes</TextContent>
             <ScrollView>
                 {displayScenes}
             </ScrollView>

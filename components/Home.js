@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Alert } from 'react-native';
+
 import { Actions } from 'react-native-router-flux';
 
 import Container from './Container';
