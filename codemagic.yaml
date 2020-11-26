@@ -5,9 +5,6 @@ workflows:
     react-native:
         name: Home Assistant Controller
         environment:
-            vars:
-                XCODE_WORKSPACE: "{{ ADD WORKSPACE NAME HERE }}"
-                XCODE_SCHEME: "{{ ADD SCHEME NAME HERE }}"
             node: latest
         scripts:
             - npm install
