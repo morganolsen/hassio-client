@@ -40,10 +40,10 @@ const Home = () => {
         <Container>
                 <Content>
                     <TextContent>Please select a category.</TextContent>
-                    <Box onPress={Actions.lights()}>
+                    <Box onPress={Actions.lights}>
                         <TextContent>Lights</TextContent>
                     </Box>
-                    <Box onPress={Actions.scenes()}>
+                    <Box onPress={Actions.scenes}>
                         <TextContent>Scenes</TextContent>
                     </Box>
                     <Box>
