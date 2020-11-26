@@ -42,9 +42,8 @@ const Lights = () => {
 
     return (
         <Container>
-            <Navbar />
+            <TextContent>Lights</TextContent>
             <ScrollView>
-                <TextContent>Lights</TextContent>
                 {displayLights}
             </ScrollView>
         </Container>

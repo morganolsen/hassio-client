@@ -22,7 +22,7 @@ const TextContent = styled.Text`
 
 const Input = styled.TextInput`
     min-width: 95%;
-    height: 40;
+    height: 40px;
     border-color: #333;
     background-color: #222;
     border-width: 1px;
@@ -62,7 +62,6 @@ const Options = () => {
 
     return (
         <Container>
-            <Navbar />
             <Header>Options</Header>
             <TextContent>API URL</TextContent>
             <Input

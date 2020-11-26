@@ -1,15 +1,17 @@
 import React from 'react';
 import { Router, Scene } from 'react-native-router-flux';
-import { StyleSheet, NativeModules, Platform } from 'react-native';
-import styled from 'styled-components';
+import { StyleSheet } from 'react-native';
 import Home from './components/Home';
 import Lights from './components/Lights';
 import Scenes from './components/Scenes';
 import Options from './components/Options';
+import Navbar from './components/Navbar';
 
 export default function App() {
 
   return (
+    <>
+      <Navbar />
       <Router>
           <Scene key="root" hideNavBar={true}>
               <Scene key="home" component={Home} title="Home" initial={true} />
@@ -18,14 +20,6 @@ export default function App() {
               <Scene key="options" component={Options} title="Options" />
           </Scene>
       </Router>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#333',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

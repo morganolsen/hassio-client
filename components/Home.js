@@ -46,23 +46,9 @@ const Home = () => {
                     <Box onPress={Actions.scenes}>
                         <TextContent>Scenes</TextContent>
                     </Box>
-                    <Box>
-                        <TextContent>Hello!</TextContent>
+                    <Box onPress={Actions.options}>
+                        <TextContent>Options</TextContent>
                     </Box>
-                    <Box>
-                        <TextContent>Hello!</TextContent>
-                    </Box>
-                    <Box>
-                        <TextContent>Hello!</TextContent>
-                    </Box>
-                    <Box>
-                        <TextContent>Hello!</TextContent>
-                    </Box>
-                    <Box>
-                        <TextContent>Hello!</TextContent>
-                    </Box>
-                    
-
                 </Content>
         </Container>
     );

@@ -36,7 +36,6 @@ const Scenes = () => {
 
     return (
         <Container>
-            <Navbar />
             <TextContent>Scenes</TextContent>
             <ScrollView>
                 {displayScenes}

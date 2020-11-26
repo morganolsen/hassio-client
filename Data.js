@@ -1,4 +1,4 @@
-import config from './config.json';
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Actions } from 'react-native-router-flux';
 import { Alert } from 'react-native';
