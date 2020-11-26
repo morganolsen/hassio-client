@@ -31,10 +31,6 @@ const TextContent = styled.Text`
 `;
 
 const Home = () => {
-    function goToLights(){
-        Actions.lights();
-        
-    }
 
     return (
         <Container>

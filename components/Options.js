@@ -4,15 +4,7 @@ import {TextInput} from 'react-native';
 import Container from './Container';
 import Navbar from './Navbar';
 import styled from 'styled-components';
-
-const Header = styled.Text`
-    font-size: 40px;
-    font-weight: 500;
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-`;
+import {Header} from './lib';
 
 const TextContent = styled.Text`
     font-size: 24px;

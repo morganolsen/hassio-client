@@ -4,18 +4,7 @@ import {ScrollView} from 'react-native';
 import Container from './Container';
 import {getLights} from '../Data';
 import LightBox from './LightBox';
-import styled from 'styled-components';
-import Navbar from './Navbar';
-
-
-const TextContent = styled.Text`
-    font-size: 40px;
-    font-weight: 500;
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-`;
+import {Header} from './lib';
 
 const Lights = () => {
 
@@ -42,7 +31,7 @@ const Lights = () => {
 
     return (
         <Container>
-            <TextContent>Lights</TextContent>
+            <Header>Lights</Header>
             <ScrollView>
                 {displayLights}
             </ScrollView>

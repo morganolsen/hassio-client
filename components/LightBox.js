@@ -1,36 +1,14 @@
 import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import {toggleLight, setAttribute} from '../Data';
-import {Switch} from 'react-native';
 import Slider from 'react-native-slider';
-import {ColorWheel} from 'react-native-color-wheel';
+import {Box} from './lib';
 
-const Box = styled.TouchableOpacity`
-    flex: 1;
-    padding: 12px;
-    border-radius: 10px;
-    margin: 10px;
-    min-width: 95%;
-    min-height: 100px;
-    align-items: center;
-`;
 
 const TextContent = styled.Text`
     font-size: 24px;
     font-weight: 500;
     color: #fff;
-`;
-
-const ModalBackground = styled.TouchableWithoutFeedback`
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
 `;
 
 const Options = styled.View`
@@ -110,22 +88,6 @@ const LightBox = (props) => {
             }
         }
         
-    }
-
-    function closeOptions(){
-        setIsOptionsOpen(false);
-    }
-
-    function hsToHsv(hsArray){
-        return {
-            h: hsArray[0],
-            s: Math.round(hsArray[1]/100),
-            v: 0
-        }
-    }
-
-    function hsvToHs(hsvObject){
-        return [hsvObject.h, (hsvObject.s*100)]
     }
 
     function rgbToHex(r, g, b) {

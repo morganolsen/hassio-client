@@ -1,16 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {applyScene} from '../Data';
+import {Box} from './lib';
 
-const Box = styled.TouchableOpacity`
-    flex: 1;
-    padding: 12px;
-    border-radius: 10px;
-    margin: 10px;
-    min-width: 95%;
-    min-height: 100px;
-    align-items: center;
-`;
 
 const TextContent = styled.Text`
     font-size: 24px;
