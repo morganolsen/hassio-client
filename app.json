@@ -1,0 +1,12 @@
+{
+  "name": "hassio-client",
+  "displayName": "hassio-client",
+  "expo": {
+    "name": "hassio-client",
+    "slug": "hassio-client",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
