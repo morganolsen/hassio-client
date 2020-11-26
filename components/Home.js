@@ -33,29 +33,18 @@ const TextContent = styled.Text`
 const Home = () => {
     function goToLights(){
         Actions.lights();
-        // Alert.alert("Alert Title", "Alert Message", [
-        //     {
-        //         text: "Cancel",
-        //         onPress: () => console.log("Cancel Pressed"),
-        //         style: "cancel"
-        //     },
-        //     { 
-        //         text: "OK", 
-        //         onPress: () => console.log("OK Pressed")
-        //     }
-        // ],
-        // {cancelable: false});
+        
     }
 
     return (
         <Container>
                 <Content>
                     <TextContent>Please select a category.</TextContent>
-                    <Box onPress={goToLights}>
+                    <Box onPress={Actions.lights()}>
                         <TextContent>Lights</TextContent>
                     </Box>
-                    <Box>
-                        <TextContent>Hello!</TextContent>
+                    <Box onPress={Actions.scenes()}>
+                        <TextContent>Scenes</TextContent>
                     </Box>
                     <Box>
                         <TextContent>Hello!</TextContent>

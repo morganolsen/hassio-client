@@ -4,6 +4,7 @@ import { StyleSheet, NativeModules, Platform } from 'react-native';
 import styled from 'styled-components';
 import Home from './components/Home';
 import Lights from './components/Lights';
+import Scenes from './components/Scenes';
 
 export default function App() {
 
@@ -12,6 +13,7 @@ export default function App() {
           <Scene key="root" hideNavBar={true}>
               <Scene key="home" component={Home} title="Home" initial={true} />
               <Scene key="lights" component={Lights} title="Lights" />
+              <Scene key="scenes" component={Scenes} title="Scenes" />
           </Scene>
       </Router>
   );
